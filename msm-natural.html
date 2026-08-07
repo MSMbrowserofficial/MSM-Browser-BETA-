@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Singing Monsters – Natural Monsters</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #e8e8e8;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 0.4rem;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #a0aec0;
+            margin-bottom: 1.8rem;
+            font-size: 0.95rem;
+        }
+
+        #search-bar {
+            width: 100%;
+            padding: 0.9rem 1.2rem;
+            font-size: 1.05rem;
+            border: 2px solid #3b82f6;
+            border-radius: 12px;
+            background: #1e293b;
+            color: #f1f5f9;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            margin-bottom: 1.5rem;
+        }
+
+        #search-bar:focus {
+            border-color: #60a5fa;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+        }
+
+        #search-bar::placeholder {
+            color: #94a3b8;
+        }
+
+        #item-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        #item-list li {
+            background: rgba(30, 41, 59, 0.85);
+            border-radius: 10px;
+            transition: transform 0.15s, background 0.15s;
+        }
+
+        #item-list li:hover {
+            background: rgba(51, 65, 85, 0.95);
+            transform: translateX(4px);
+        }
+
+        #item-list a {
+            display: block;
+            padding: 0.85rem 1.2rem;
+            color: #93c5fd;
+            text-decoration: none;
+            font-weight: 500;
+            border-left: 4px solid #3b82f6;
+            border-radius: 10px;
+        }
+
+        #item-list a:hover {
+            color: #bfdbfe;
+        }
+
+        .no-results {
+            text-align: center;
+            color: #94a3b8;
+            padding: 2rem;
+            font-size: 1.1rem;
+            display: none;
+        }
+
+        .count {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.85rem;
+            margin-top: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 My Singing Monsters</h1>
+        <p class="subtitle">Natural Monsters – kliknij, aby otworzyć wiki</p>
+
+        <input type="text" id="search-bar" placeholder="Szukaj potwora..." autocomplete="off">
+
+        <ul id="item-list">
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Tweedle" target="_blank" rel="noopener">natural-Tweedle</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Potbelly" target="_blank" rel="noopener">natural-Potbelly</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Noggin" target="_blank" rel="noopener">natural-Noggin</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Toe_Jammer" target="_blank" rel="noopener">natural-Toe Jammer</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Mammott" target="_blank" rel="noopener">natural-Mammott</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Dandidoo" target="_blank" rel="noopener">natural-Dandidoo</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Cybop" target="_blank" rel="noopener">natural-Cybop</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Quibble" target="_blank" rel="noopener">natural-Quibble</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Pango" target="_blank" rel="noopener">natural-Pango</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Shrubb" target="_blank" rel="noopener">natural-Shrubb</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Oaktopus" target="_blank" rel="noopener">natural-Oaktopus</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Furcorn" target="_blank" rel="noopener">natural-Furcorn</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Fwog" target="_blank" rel="noopener">natural-Fwog</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Drumpler" target="_blank" rel="noopener">natural-Drumpler</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Maw" target="_blank" rel="noopener">natural-Maw</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Reedling" target="_blank" rel="noopener">natural-Reedling</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Spunge" target="_blank" rel="noopener">natural-Spunge</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Thumpies" target="_blank" rel="noopener">natural-Thumpies</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Scups" target="_blank" rel="noopener">natural-Scups</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/PomPom" target="_blank" rel="noopener">natural-PomPom</a></li>
+            <li><a href="https://mysingingmonsters.fandom.com/wiki/Congle" target="_blank" rel="noopener">natural-Congle</a></li>
+        </ul>
+
+        <p class="no-results" id="no-results">Brak wyników 😢</p>
+        <p class="count" id="count"></p>
+    </div>
+
+    <script>
+        const searchBar = document.getElementById('search-bar');
+        const list = document.getElementById('item-list');
+        const items = list.getElementsByTagName('li');
+        const noResults = document.getElementById('no-results');
+        const countEl = document.getElementById('count');
+
+        function updateCount() {
+            let visible = 0;
+            for (let item of items) {
+                if (item.style.display !== 'none') visible++;
+            }
+            countEl.textContent = `Widoczne: ${visible} / ${items.length}`;
+            noResults.style.display = visible === 0 ? 'block' : 'none';
+        }
+
+        searchBar.addEventListener('input', function () {
+            const filter = this.value.toLowerCase().trim();
+
+            for (let item of items) {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(filter) ? '' : 'none';
+            }
+            updateCount();
+        });
+
+        // Initial count
+        updateCount();
+
+        // Focus search on load
+        searchBar.focus();
+    </script>
+</body>
+</html>
